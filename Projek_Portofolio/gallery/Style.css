@@ -19,6 +19,9 @@ header{
     align-items: center;
     padding: 30px 10%;
 }
+button{
+    border: none;
+}
 .logo{
     cursor: pointer;
     margin-right: auto;
