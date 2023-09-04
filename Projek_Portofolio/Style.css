@@ -17,7 +17,7 @@ header{
     justify-content: flex-end;
     align-items: center;
     padding: 30px 10%;
-    background-color: #24252a;
+    background-color: #4653a2;
 }
 .logo{
     cursor: pointer;
@@ -35,4 +35,10 @@ header{
 }
 .navLinks li a:hover{
     color: #0088a9;
+}
+section{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #48549e;
 }
