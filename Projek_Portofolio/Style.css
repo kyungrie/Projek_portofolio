@@ -1,3 +1,16 @@
+@font-face{
+    font-family: 'Myfont';
+    src: url('norwester/norwester.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Myfont2';
+    src: url('glacial-indifference/GlacialIndifference-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins&family=Public+Sans:wght@700&display=swap');
 
 *{
@@ -6,7 +19,7 @@
     padding: 0;
 }
 li, a{
-    font-family: "Montserrat", sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     font-size: 20px;
     color: #edf0f1;
@@ -17,7 +30,7 @@ header{
     justify-content: flex-end;
     align-items: center;
     padding: 30px 10%;
-    background-color: #4653a2;
+    background-color: #171616;
 }
 .logo{
     cursor: pointer;
@@ -34,11 +47,15 @@ header{
     transition: all 0 ;
 }
 .navLinks li a:hover{
-    color: #0088a9;
+    color: #DE151F;
 }
 section{
-    font-family: "Montserrat", sans-serif;
+    font-family: "Myfont2";
     font-weight: 500;
     font-size: 20px;
-    color: #48549e;
+    color: #ECEBEA;
+    background-color: #171616;
+}
+section h1{
+    color: #DE151F;
 }
