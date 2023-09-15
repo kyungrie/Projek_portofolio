@@ -1,11 +1,5 @@
-@font-face{
-    font-family: 'Myfont';
-    src: url('norwester/norwester.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
-}
 @font-face {
-    font-family: 'Myfont2';
+    font-family: 'Myfont';
     src: url('glacial-indifference/GlacialIndifference-Regular.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
@@ -14,47 +8,88 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins&family=Public+Sans:wght@700&display=swap');
 
 *{
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
-li, a{
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    font-size: 20px;
-    color: #edf0f1;
-    text-decoration: none;
-}
-header{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 30px 10%;
     background-color: #171616;
 }
+
 .logo{
-    cursor: pointer;
-    margin-right: auto;
+    color: #ECEBEA;
 }
-.navLinks{
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px 0;
+    font-family: 'Montserrat', sans-serif;
+    color: #ECEBEA;
+}
+
+nav ul{
+    display: flex;
     list-style: none;
+    width: 50%;
+    justify-content: space-between;
+
 }
-.navLinks li{
-    display: inline-block;
-    padding: 0px 20px;
+
+nav ul li a{
+    color: #ECEBEA;
+    text-decoration: none;
 }
-.navLinks li a:hover{
+
+nav ul li a:hover{
     transition: all 0 ;
-}
-.navLinks li a:hover{
     color: #DE151F;
 }
+
+.menu-toggle{
+    display: flex;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    left: -20px;
+    top: -5px;
+    position: relative;
+}
+
+.menu-toggle input{
+    position: absolute;
+    width: 40px;
+    height: 28px;
+    opacity: 0;
+}
+
+.menu-toggle span{
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: #ECEBEA;
+    border-radius: 3px;
+}
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    nav ul{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    nav ul{
+        display: none;
+    }
+}
+
 section{
-    font-family: "Myfont2";
+    font-family: "Myfont";
     font-weight: 500;
     font-size: 20px;
     color: #ECEBEA;
-    background-color: #171616;
 }
 section h1{
     color: #DE151F;
