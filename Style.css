@@ -7,10 +7,17 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins&family=Public+Sans:wght@700&display=swap');
 
+:root{
+    --bg-color: #171616;
+    --second-bg-color: #ECEBEA;
+    --text-color: #ECEBEA;
+    --second-text-color: #DE151F;
+}
+
 *{
     margin: 0;
     padding: 0;
-    background-color: #171616;
+    background-color: var(--bg-color);
 }
 
 .logo{
@@ -24,6 +31,7 @@ nav{
     padding: 30px 0;
     font-family: 'Montserrat', sans-serif;
     color: #ECEBEA;
+    background-color: var(--bg-color);
 }
 
 nav ul{
@@ -35,13 +43,13 @@ nav ul{
 }
 
 nav ul li a{
-    color: #ECEBEA;
+    color: var(--text-color);
     text-decoration: none;
 }
 
 nav ul li a:hover{
     transition: all 0 ;
-    color: #DE151F;
+    color: var(--second-text-color);
 }
 
 .menu-toggle{
@@ -77,6 +85,10 @@ nav ul li a:hover{
     nav ul{
         width: 50%;
     }
+    body{
+        width: 50%;
+    }
+
 }
 
 @media screen and (max-width: 576px) {
@@ -86,11 +98,73 @@ nav ul li a:hover{
 }
 
 section{
+    min-height: 50vh;
     font-family: "Myfont";
     font-weight: 500;
     font-size: 20px;
-    color: #ECEBEA;
+    color: var(--text-color);
 }
 section h1{
-    color: #DE151F;
+    color: var(--second-text-color);
 }
+
+
+#home{
+    display: inline-block;
+    font-size: 30px;
+    text-align: left;
+    padding-left: 10%;
+    padding-top: 10%;
+}
+#home h1{
+    font-size: 250%;
+}
+
+#teamimg{
+    display: inline-block;
+}
+
+
+.display{
+    display: flex;
+}
+
+.about {
+    display: flex;
+
+}
+.about a{
+    text-decoration: none;
+    color: var(--second-text-color);
+    font-size: 30px;
+}
+.about h1{
+    font-size: 250%;
+    font-weight: bold;
+    text-align:center;
+    justify-content: center;
+}
+
+.us{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    
+    
+}
+
+.donglot{
+    font-family:'Montserrat', sans-serif ;
+    font-weight: 500;
+    color: #FFFFFF;
+    font-size: 14px;
+    padding: 10px 40px;
+    border-radius: 39px;
+
+    background: #DE151F;
+}
+.donglot:hover{
+    color:  #DE151F;
+  background-color:#ECEBEA;
+}
+
